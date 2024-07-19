@@ -1,7 +1,8 @@
 import { Box, Toolbar, Typography } from "@mui/material";
-import backgroundUrl from "/src/images/Photo_Cropped_LandsEnd_VictorChen_LookingOut.jpeg";
 
 function Home() {
+  const backgroundUrl =
+    "./src/images/Photo_Cropped_LandsEnd_VictorChen_LookingOut.jpeg";
   return (
     <>
       <Box id="home" />
@@ -15,8 +16,8 @@ function Home() {
           width: "100%",
           display: "flex",
           flexDirection: "row",
-          alignItems: "center", // Align items vertically centered
-          justifyContent: "center", // Align items horizontally centered
+          alignItems: "center", // vertically centered
+          justifyContent: "center", // horizontally centered
           backgroundAttachment: "static",
         }}
       >

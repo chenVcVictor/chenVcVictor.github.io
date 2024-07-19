@@ -20,7 +20,7 @@ function Projects() {
   const projects = [
     {
       projectName: "Personal Project",
-      imageUrl: "/src/projectImages/Personal_Website_Screenshot.png",
+      imageUrl: "./src/projectImages/Personal_Website_Screenshot.png",
       imageTitle: "Personal Website Screenshot",
       content: "Skills: Javascript, Material-UI",
       githubLink: "https://github.com/chenVcVictor/New-Personal-Website",
