@@ -24,7 +24,7 @@ import { aboutText } from "/src/textContent";
 // probably 2 columns
 
 function About() {
-  const profilePicUrl = "./src/images/Photo_KokoCraterTrail_VictorChen.jpeg";
+  const profilePicUrl = "./images/Photo_KokoCraterTrail_VictorChen.jpeg";
   return (
     <>
       <Box id="about" />

@@ -2,7 +2,7 @@ import { Box, Toolbar, Typography } from "@mui/material";
 
 function Home() {
   const backgroundUrl =
-    "./src/images/Photo_Cropped_LandsEnd_VictorChen_LookingOut.jpeg";
+    "./images/Photo_Cropped_LandsEnd_VictorChen_LookingOut.jpeg";
   return (
     <>
       <Box id="home" />
