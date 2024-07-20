@@ -1,4 +1,6 @@
-export const aboutText = `
+export const aboutText = "...";
+
+const oldText = `
     Hello! My name is Victor Chen, and I am a recent computer science graduate from UC Berkeley. 
     With that, I currently aspire to work as a software engineer where I will be developing tools and features for 
     large-scale applications. Since high school, I've been passionate about learning and innovating within the technological field.
@@ -9,6 +11,4 @@ export const aboutText = `
     Having graduated in December 2023, I aspire to work as a software engineer. 
     Recently I started to work on my full-stack-based side project as a hobby, 
     with my stack being Python (Django) for the backend and Javascript (React) for the frontend.
-    Please feel free to reach out if you have any questions or want to share any thoughts. I'm open to chat!🤗`
-
-
+    Please feel free to reach out if you have any questions or want to share any thoughts. I'm open to chat!🤗`;

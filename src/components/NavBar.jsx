@@ -16,7 +16,7 @@ import {
 // { name: 'Projects', href: '#projects' },
 // { name: 'Experience', href: '#experience' },
 // { name: 'Resume', href: '#resume' }
-const navItems = ["Home", "About", "Projects", "Experience", "Resume"];
+const navItems = ["Home", "About", "Projects", "Resume"];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -48,7 +48,7 @@ function NavBar() {
       <AppBar position="fixed">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            {/* Full screen for Header */}
+            {/* Full screen Header */}
             <Typography
               variant="h6"
               noWrap
@@ -115,14 +115,20 @@ function NavBar() {
                 }}
               >
                 {navItems.map((item) => (
-                  <MenuItem key={item} onClick={handleCloseNavMenu}>
+                  <MenuItem
+                    key={item}
+                    onClick={() => {
+                      handleCloseNavMenu();
+                      handleScrollTo(item.toLowerCase());
+                    }}
+                  >
                     <Typography textAlign="center">{item}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
 
-            {/* Mini screen for Header */}
+            {/* Mini screen Header */}
             <Typography
               variant="h5"
               noWrap
