@@ -1,8 +1,4 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import { Container, Box, Toolbar, CssBaseline } from "@mui/material";
-import ResponsiveAppBar from "./exampleComponents/ResponsiveAppBar";
+import { Box, Toolbar, CssBaseline } from "@mui/material";
 
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
@@ -20,8 +16,6 @@ function App() {
         <About />
         <Projects />
         <Resume />
-        <Toolbar />
-        <Toolbar />
         <Toolbar />
       </Box>
     </>

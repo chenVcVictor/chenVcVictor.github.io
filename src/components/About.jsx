@@ -38,7 +38,7 @@ function About() {
             <CardMedia component="img" src={profilePicUrl} />
           </Grid>
           <Grid item xs={12} md={7}>
-            <Typography>{aboutText}</Typography>
+            <Typography variant="h6">{aboutText}</Typography>
           </Grid>
         </Grid>
       </Container>

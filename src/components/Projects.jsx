@@ -14,7 +14,6 @@ import {
 } from "@mui/material";
 
 import { projectsText } from "../textContent";
-// import useStyles from './styles'
 
 function Projects() {
   const handleClickLink = (url) => {
@@ -63,6 +62,7 @@ function Projects() {
                     gutterBottom
                     sx={{
                       fontWeight: "bold",
+                      fontStyle: "italic",
                     }}
                   >
                     Tools: {project.projectTools}
