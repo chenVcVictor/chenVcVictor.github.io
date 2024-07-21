@@ -17,7 +17,7 @@ import {
   Box,
   CardMedia,
 } from "@mui/material";
-import { aboutText } from "/src/textContent";
+import { aboutText } from "../textContent";
 
 // import profilePicUrl from "./src/images/Photo_KokoCraterTrail_VictorChen.jpeg";
 

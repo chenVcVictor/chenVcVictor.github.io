@@ -13,51 +13,10 @@ import {
   Button,
 } from "@mui/material";
 
-import { aboutText } from "/src/textContent";
+import { projectsText } from "../textContent";
 // import useStyles from './styles'
 
 function Projects() {
-  const projects = [
-    {
-      projectName: "Personal Project",
-      imageUrl: "./projectImages/Personal_Website_Screenshot.png",
-      imageTitle: "Personal Website Screenshot",
-      content: "...",
-      githubLink: "https://github.com/chenVcVictor/New-Personal-Website",
-    },
-    {
-      projectName: "Loldoku",
-      imageUrl: "./projectImages/loldokuScreenshot.png",
-      imageTitle: "loldoku game screenshot",
-      content: "...",
-      githubLink: "https://github.com/chenVcVictor/loldoku",
-    },
-    {
-      projectName: "Pintos Operating System",
-      imageUrl: "./projectImages/cs162bean.png",
-      imageTitle: "Evan Bot and Friend",
-      content:
-        "Integrated support for user’s process and file system calls, and led software development of the strict priority scheduler for a multithreaded system and subdirectory support for a resizeable file system in a team of four using C. ",
-      githubLink: "https://github.com/chenVcVictor/New-Personal-Website",
-    },
-    {
-      projectName: "End-to-End Encrypted File Sharing System",
-      imageUrl: "./projectImages/cs161evanbotandFriend.jpg",
-      imageTitle: "Evan Bot and Friend",
-      content:
-        "Designed and developed a secure user base system for trusted users to update, store, and share files with other users through a client and an insecure data server using Golang and Ginkgo.",
-      githubLink: "https://github.com/chenVcVictor/New-Personal-Website",
-    },
-    {
-      projectName: "Gitlet",
-      imageUrl: "./projectImages/gitImage.png",
-      imageTitle: "Git Image",
-      content:
-        "Developed a Git-inspired version control system, which allows users to track version history of files using Java and JUnit Testing.",
-      githubLink: "https://github.com/chenVcVictor/New-Personal-Website",
-    },
-  ];
-
   const handleClickLink = (url) => {
     window.open(url, "_blank");
   };
@@ -71,7 +30,7 @@ function Projects() {
           Projects
         </Typography>
         <Grid container spacing={4} maxWidth="lg">
-          {projects.map((project, index) => (
+          {projectsText.map((project, index) => (
             <Grid item md={4} sm={12} key={index}>
               <Card
                 sx={{
@@ -93,12 +52,20 @@ function Projects() {
                 >
                   <Typography
                     variant="h6"
-                    gutterBottom
                     sx={{
                       fontWeight: "bold",
                     }}
                   >
                     {project.projectName}
+                  </Typography>
+                  <Typography
+                    variant="subtitle"
+                    gutterBottom
+                    sx={{
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Tools: {project.projectTools}
                   </Typography>
                   <Typography variant="body1">{project.content}</Typography>
                 </CardContent>
@@ -109,6 +76,14 @@ function Projects() {
                   >
                     View Code
                   </Button>
+
+                  <div>
+                    {project.permissionRequired && (
+                      <Typography sx={{ fontStyle: "italic" }}>
+                        *Contact for Permission*
+                      </Typography>
+                    )}
+                  </div>
                 </CardActions>
               </Card>
             </Grid>

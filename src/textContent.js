@@ -1,5 +1,69 @@
 export const aboutText = "...";
 
+export const projectsText = [
+  {
+    projectName: "Personal Project",
+    projectTools: "Javascript, React",
+    imageUrl: "./projectImages/Personal_Website_Screenshot.png",
+    imageTitle: "Personal Website Screenshot",
+    content:
+      "Developed a responsive desktop & mobile user-friendly interface to represent myself and my work :).",
+    githubLink: "https://github.com/chenVcVictor/New-Personal-Website",
+    permissionRequired: false,
+  },
+  {
+    projectName: "Loldoku",
+    projectTools: "Javascript, React, Python, Django",
+    imageUrl: "./projectImages/loldokuScreenshot.png",
+    imageTitle: "loldoku game screenshot",
+    content:
+      "Developed a full-stack League of Legends inspired puzzle game with an interactive user interface, giving users real-time feedback for user inputs.",
+    githubLink: "https://github.com/chenVcVictor/loldoku",
+    permissionRequired: false,
+  },
+  {
+    projectName: "Spam or Ham Classification",
+    projectTools: "Python, scikit-learn, pandas",
+    imageUrl: "./projectImages/spamOrHam.png",
+    imageTitle: "Spam or Ham screenshot",
+    content:
+      "Developed a machine learning model for classifying emails as spam or not spam, achieving an accuracy of 92.4%. Focused on optimizing the true positive rate while minimizing the false positive rate to ensure high precision and recall.",
+    githubLink: "https://github.com/chenVcVictor/spamOrHam",
+    permissionRequired: true,
+  },
+  {
+    projectName: "Pintos Operating System",
+    projectTools: "C, GDB",
+    imageUrl: "./projectImages/cs162bean.png",
+    imageTitle: "Evan Bot and Friend",
+    content:
+      "Integrated support for user’s process and file system calls, a multithreaded system with a strict priority scheduler, and subdirectory support for a resizeable file system with a buffer cache. ",
+    githubLink: "https://github.com/chenVcVictor/pintos",
+    permissionRequired: true,
+  },
+  {
+    projectName: "End-to-End Encrypted File Sharing System",
+    projectTools: "Golang, Ginkgo",
+    imageUrl: "./projectImages/cs161evanbotandFriend.jpg",
+    imageTitle: "Evan Bot and Friend",
+    content:
+      "Designed and developed a secure user base system for trusted users to update, store, and share files with other users through a client and an insecure data server. Used encryption, hashing, MACs, and RSA-encrypted digital signatures to ensure confidentiality, integrity, and authenticity.",
+    githubLink:
+      "https://github.com/chenVcVictor/End-to-End-Encrypted-User-File-Sharing-System",
+    permissionRequired: true,
+  },
+  {
+    projectName: "Gitlet",
+    projectTools: "Java, JUnit",
+    imageUrl: "./projectImages/gitImage.png",
+    imageTitle: "Git Image",
+    content:
+      "Developed a Git-inspired version control system that allows users to track version history of files through serialization and persistance of file data. Supports common git commands such as add, commit, branch, merge, status, and log, and as well as remote commands such as push, fetch, and pull.",
+    githubLink: "https://github.com/chenVcVictor/gitlet",
+    permissionRequired: true,
+  },
+];
+
 const oldText = `
     Hello! My name is Victor Chen, and I am a recent computer science graduate from UC Berkeley. 
     With that, I currently aspire to work as a software engineer where I will be developing tools and features for 
