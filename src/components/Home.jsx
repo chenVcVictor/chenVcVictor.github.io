@@ -17,8 +17,8 @@ import { socialMediaRedirects } from "../textContent";
 
 import "./componentStyles.css";
 
-// const backgroundUrl =
-//   "./images/Photo_Cropped_LandsEnd_VictorChen_LookingOut.jpeg";
+const backgroundUrl =
+  "./images/Photo_Cropped_LandsEnd_VictorChen_LookingOut.jpeg";
 
 function Home() {
   const theme = useTheme();
@@ -26,7 +26,12 @@ function Home() {
   return (
     <>
       <Box id="home" />
-      <Box className="homeBackground">
+      <Box
+        className="homeBackground"
+        sx={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundUrl})`,
+        }}
+      >
         <Stack spacing={2}>
           <Typography
             className="homeText"
