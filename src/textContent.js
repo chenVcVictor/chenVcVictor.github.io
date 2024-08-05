@@ -28,8 +28,8 @@ export const socialMediaRedirects = [
 
 export const projectsText = [
   {
-    projectName: "Personal Project",
-    projectTools: "Javascript, React",
+    projectName: "Personal Website",
+    projectTools: "Javascript, React, Material-UI",
     imageUrl: "./projectImages/Personal_Website_Screenshot.png",
     imageTitle: "Personal Website Screenshot",
     content:
