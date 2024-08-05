@@ -1,5 +1,30 @@
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+
 export const aboutText =
   "Hey! My name is Victor Chen and I recently graduated from UC Berkeley with a B.A. in Computer Science. Last summer I was a Software Engineer Intern at Emotewell, where I worked on backend features related to user image uploads, improving website security and efficiency. Currently, I am learning full-stack development with a Javascript React frontend and Python Django backend. \n\nOutside of academics, I really enjoy hiking, photography, and playing a variety of mobile/PC games during my free time. That being said, feel free to reach out if you have any questions. I'm open to chat!🤗";
+
+export const socialMediaRedirects = [
+  {
+    iconComponent: LinkedInIcon,
+    url: "https://www.linkedin.com/in/chen-vc-victor/",
+    backgroundColor: "white",
+    color: "#0a66c2",
+  },
+  {
+    iconComponent: GitHubIcon,
+    url: "https://github.com/chenvcvictor",
+    backgroundColor: "black",
+    color: "#FFF",
+  },
+  {
+    iconComponent: InstagramIcon,
+    url: "https://www.instagram.com/victorc_lbftw/",
+    backgroundColor: "white",
+    color: "#cd486b",
+  },
+];
 
 export const projectsText = [
   {

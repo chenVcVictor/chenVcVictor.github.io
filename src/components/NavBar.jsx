@@ -12,10 +12,8 @@ import {
   Button,
 } from "@mui/material";
 
-// { name: 'About', href: '#about' },
-// { name: 'Projects', href: '#projects' },
-// { name: 'Experience', href: '#experience' },
-// { name: 'Resume', href: '#resume' }
+import "./componentStyles.css";
+
 const navItems = ["Home", "About", "Projects", "Resume"];
 
 function NavBar() {
@@ -50,18 +48,18 @@ function NavBar() {
           <Toolbar disableGutters>
             {/* Full screen Header */}
             <Typography
+              className="navNameText"
               variant="h6"
               noWrap
               component="a"
               href="/"
               sx={{
-                mr: 2,
                 display: { xs: "none", md: "flex" },
-                fontFamily: "sans-serif",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
+                // mr: 2,
+                // fontWeight: 700,
+                // letterSpacing: ".3rem",
+                // color: "inherit",
+                // textDecoration: "none",
               }}
             >
               Victor Chen
@@ -77,7 +75,12 @@ function NavBar() {
                     handleCloseNavMenu();
                     handleScrollTo(item.toLowerCase());
                   }}
-                  sx={{ ml: 1, mr: 1, my: 2, color: "white", display: "block" }}
+                  sx={{
+                    ml: 1,
+                    mr: 1,
+                    color: "white",
+                    display: "block",
+                  }}
                 >
                   {item}
                 </Button>
@@ -130,19 +133,14 @@ function NavBar() {
 
             {/* Mini screen Header */}
             <Typography
+              className="navNameText"
               variant="h5"
               noWrap
               component="a"
               href="/"
               sx={{
-                mr: 2,
                 display: { xs: "flex", md: "none" },
                 flexGrow: 1,
-                fontFamily: "sans-serif",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
               }}
             >
               Victor Chen

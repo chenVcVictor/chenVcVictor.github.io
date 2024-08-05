@@ -1,0 +1,58 @@
+.navNameText {
+  margin-right: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.homeBackground {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/Photo_Cropped_LandsEnd_VictorChen_LookingOut.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically centered */
+  justify-content: center; /* Horizontally centered */
+  background-attachment: static;
+}
+
+.homeText {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  top: -50px;
+  animation: introFadeIn 1s ease-in-out;
+}
+
+.iconButtons {
+  animation: introFadeIn 1s ease-in-out;
+}
+
+/* .pageAnimation {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.pageAnimation.animate {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+@keyframes introFadeIn {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

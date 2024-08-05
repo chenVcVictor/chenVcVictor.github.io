@@ -14,15 +14,19 @@ import {
 } from "@mui/material";
 
 import { projectsText } from "../textContent";
+// import useIntersectionObserver from "../hooks/useFadeInObserver";
 
 function Projects() {
   const handleClickLink = (url) => {
     window.open(url, "_blank");
   };
 
+  // const [pageRef, inView] = useIntersectionObserver({ threshold: 0.1 });
+
   return (
     <>
       <Box id="projects" />
+      {/* <div ref={pageRef} className={`pageAnimation ${inView ? "animate" : ""}`}> */}
       <Container maxWidth="lg">
         <Box sx={{ height: "50px" }} />
         <Typography variant="h3" gutterBottom>
@@ -46,7 +50,7 @@ function Projects() {
                 />
                 <CardContent
                   sx={{
-                    flexGrow: 1, // this will ensure content takes up available space
+                    flexGrow: 1, // this will allow content to take up available space
                   }}
                 >
                   <Typography
@@ -90,6 +94,7 @@ function Projects() {
           ))}
         </Grid>
       </Container>
+      {/* </div> */}
     </>
   );
 }

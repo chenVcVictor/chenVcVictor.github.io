@@ -9,27 +9,25 @@ Layout Idea:
 */
 
 import * as React from "react";
-import {
-  Container,
-  Typography,
-  Grid,
-  Toolbar,
-  Box,
-  CardMedia,
-} from "@mui/material";
+import { Container, Typography, Grid, Box, CardMedia } from "@mui/material";
 import { aboutText } from "../textContent";
+import "./componentStyles.css";
 
-// import profilePicUrl from "./src/images/Photo_KokoCraterTrail_VictorChen.jpeg";
+// import useIntersectionObserver from "../hooks/useFadeInObserver";
 
-// probably 2 columns
+const profilePicUrl = "./images/Photo_KokoCraterTrail_VictorChen.jpeg";
 
 function About() {
-  const profilePicUrl = "./images/Photo_KokoCraterTrail_VictorChen.jpeg";
+  // const [pageRef, inView] = useIntersectionObserver({ threshold: 0.1 });
   return (
     <>
       <Box id="about" />
-      <Container maxWidth="lg" sx={{}}>
+      <Container maxWidth="lg">
         <Box sx={{ height: "50px" }} />
+        {/* <div
+          ref={pageRef}
+          className={`pageAnimation ${inView ? "animate" : ""}`}
+        > */}
         <Typography variant="h3" gutterBottom>
           About
         </Typography>
@@ -41,6 +39,7 @@ function About() {
             <Typography variant="h6">{aboutText}</Typography>
           </Grid>
         </Grid>
+        {/* </div> */}
       </Container>
     </>
   );
