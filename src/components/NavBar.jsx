@@ -55,11 +55,6 @@ function NavBar() {
               href="/"
               sx={{
                 display: { xs: "none", md: "flex" },
-                // mr: 2,
-                // fontWeight: 700,
-                // letterSpacing: ".3rem",
-                // color: "inherit",
-                // textDecoration: "none",
               }}
             >
               Victor Chen

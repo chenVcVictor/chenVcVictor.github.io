@@ -28,6 +28,16 @@ export const socialMediaRedirects = [
 
 export const projectsText = [
   {
+    projectName: "The Budget Challenge",
+    projectTools: "Javascript, React, Material-UI",
+    imageUrl: "./projectImages/budgetChallengeScreenshot.png",
+    imageTitle: "The Budget Challenge",
+    content:
+      "Edulearn Hackathon Submission. Designed and developed a React.js simulation to teach current & prospective college students on financial management. ",
+    githubLink: "https://github.com/chenVcVictor/Hack-Edulearn-Budgeting",
+    permissionRequired: false,
+  },
+  {
     projectName: "Personal Website",
     projectTools: "Javascript, React, Material-UI",
     imageUrl: "./projectImages/Personal_Website_Screenshot.png",
